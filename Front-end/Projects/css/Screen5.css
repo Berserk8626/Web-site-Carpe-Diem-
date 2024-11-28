@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-700.woff2') format('woff2'),
+         url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-700.woff2') format('woff');
+    font-weight: 700;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-regular.woff2') format('woff2'),
+         url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-regular.woff2') format('woff');
+    font-weight: 400;
+    font-style: regular;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-500.woff2') format('woff2'),
+         url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-500.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-900.woff2') format('woff2'),
+         url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-900.woff2') format('woff');
+    font-weight: 900;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: light;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-500.woff2') format('woff2');
+    font-weight: 500;
+    font-style: regular;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: SemiBold;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: Bold;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-800.woff2') format('woff2');
+    font-weight: 800;
+    font-style: ExtraBold;
+  }
+
+  .wrapper4 {
+    background-color: #FEFBF3;
+    background-size: cover;
+    max-width: 100%;
+  }
+
+  .container--gallery h1{
+    font-family: 'Playfair Display SC';
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 0px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  .wrapper4 {
+    background-color: #FEFBF3;
+    display: flex; /* Використання flexbox */
+    flex-direction: column; /* Розташування елементів вертикально */
+    align-items: center; /* Центрування по горизонталі */
+    justify-content: space-between; /* Відступи між елементами */
+    gap: 20px; /* Відстань між елементами */
+    padding: 20px; /* Внутрішні відступи */
+    max-width: 100%;
+    box-sizing: border-box; /* Враховує padding у загальний розмір */
+    
+  }
+
+.container--gallery{
+    padding: 10% 8%;
+}
+
+.gallery--video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1%;
+}
+video {
+    max-width: 50%; /* Встановлює максимальну ширину відео */
+    max-height: 50%;
+}
+
+.gallery--video video{
+    border-radius: 4%;
+    margin-bottom: 1%;
+}
+
+.gallery--images{
+    width: 33%; 
+    height: auto;
+    display: flex;
+    justify-content:baseline;
+    gap: 3%;
+    align-items: center;
+}
+
+
+  

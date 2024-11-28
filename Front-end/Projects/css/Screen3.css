@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-700.woff2') format('woff2'),
+         url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-700.woff2') format('woff');
+    font-weight: 700;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-regular.woff2') format('woff2'),
+         url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-regular.woff2') format('woff');
+    font-weight: 400;
+    font-style: regular;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-500.woff2') format('woff2'),
+         url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-500.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-900.woff2') format('woff2'),
+         url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-900.woff2') format('woff');
+    font-weight: 900;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: light;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-500.woff2') format('woff2');
+    font-weight: 500;
+    font-style: regular;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: SemiBold;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: Bold;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-800.woff2') format('woff2');
+    font-weight: 800;
+    font-style: ExtraBold;
+  }
+
+
+.container--News{
+    padding-top: 150px;
+    display: flex; /* Гибкий контейнер для горизонтального расположения */
+    flex-direction: column;
+    align-items: center; /* Выравнивание элементов по вертикали */
+    gap: 20px; /* Интервал между картинками */
+}
+.container--News h1{
+    padding-bottom: 0px;
+    font-family: 'Playfair Display';
+    font-size: 55px;
+    font-weight: 600;
+    width: 85%;
+    text-align: left;
+}
+
+.news-blocks {
+    display: flex; /* Горизонтальне розташування блоків новин */
+    gap: 30px; /* Відстань між блоками */
+    width: 85%;
+}
+
+.block--news--img {
+    width: 350px; 
+    height: auto;
+    position: relative; /* Для позиционирования текста внутри блока */
+    display: flex;
+    flex-direction: column; /* Для вертикального размещения картинки и текста */
+    align-items: left; /* Выравнивание по центру */
+}
+
+.block--news--img h3{
+    position: absolute; /* Абсолютне позиціонування */
+    
+    width: 100%; /* Розтягування на ширину зображення */
+    
+    color: #fff; /* Білий текст */
+    font-family: 'Playfair Display';
+    font-size: 27px;
+    font-weight: 600;
+    padding-left: 3%;
+    padding-top: 3%;
+    margin-top: 0%;
+    z-index: 1; /* Щоб текст був поверх зображення */
+}
+
+.block--news--img img {
+    width: 100%; /* Зображення займає всю ширину блока */
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.news--text {
+    background-color: #fff; /* Білий фон */
+    padding: 5%; /* Внутрішні відступи */
+
+    border-bottom-left-radius:  5px;
+    border-bottom-right-radius:  5px;
+    margin-top: 0%; /* Відступ між зображенням і текстом */
+    width: 100%; /* Ширина блоку відповідає ширині зображення */
+    box-sizing: border-box; /* Увімкнути відступи всередині ширини */
+}
+
+.news--text p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 300;
+}
+.news--text a {
+    color: #000000; /* Синій колір для посилань */
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    font-weight: 400;
+
+}
+.news--text a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
+.news--text p{
+    padding-bottom: 10%;
+}
+
+.wrapper3 {
+    background-color: #D3D3CD; /* Новий колір фону */
+     /* Відступи для нового контенту */
+    padding-bottom: 10%;
+    margin-top: -191px;
+}

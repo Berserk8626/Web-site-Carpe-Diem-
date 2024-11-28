@@ -1,0 +1,216 @@
+
+/* playfair-display-sc-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/playfair-display-sc-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* playfair-display-sc-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/playfair-display-sc-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* playfair-display-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/playfair-display-v37-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* playfair-display-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/playfair-display-v37-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* montserrat-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v26-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v26-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+ 
+/* Основні налаштування */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: url('/img/svg/screen\ 1/#A67C52') no-repeat center center/cover;
+}
+
+/* Заголовок */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 24px;
+  color: #000;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* Секція intro */
+.intro {
+  text-align: left;
+  padding: 100px 40px;
+}
+
+.intro h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.intro .subtitle {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Пошук та кнопки */
+.search-area {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.search-area input[type="text"] {
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+}
+
+.enquiry-btn {
+  background-color: #A67C52;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.save-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Карточки */
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+}
+
+.card p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Іконка доступності */
+.accessibility-icon {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.accessibility-icon img {
+  width: 30px;
+}
+

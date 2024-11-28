@@ -1,0 +1,85 @@
+#include <iostream>
+#include <conio.h>
+#include <string.h>
+#include <windows.h> 
+using namespace std;
+
+void inputBookData(char*** bookData, int& numBooks) {
+    cout << "Введіть кількість книг: ";
+    cin >> numBooks;
+
+    *bookData = new char* [numBooks];
+
+    for (int i = 0; i < numBooks; ++i) {
+        char buffer[100];
+        char buffer1[100];
+        char buffer2[100];
+        char buffer3[100];
+        cin.ignore();
+
+        cout << "Введіть автора книги #" << i + 1 << ": ";
+        cin.getline(buffer, sizeof(buffer));
+
+        cout << "Введіть назву книги #" << i + 1 << ": ";
+        cin.getline(buffer1, sizeof(buffer1));
+
+        cout << "Введіть видавництво книги #" << i + 1 << ": ";
+        cin.getline(buffer2, sizeof(buffer2));
+
+        cout << "Введіть рік видання книги #" << i + 1 << ": ";
+        cin.getline(buffer3, sizeof(buffer3));
+
+        // Розділяємо дані книги символом, який не використовується для запису даних
+        int totalLength = strlen(buffer) + strlen(buffer1) + strlen(buffer2) + strlen(buffer3) + 4; // 4 - для пробілів та '\0'
+        char* temp = new char[totalLength];
+
+        strcpy(temp, buffer);
+        strcat(temp, " ");
+        strcat(temp, buffer1);
+        strcat(temp, " ");
+        strcat(temp, buffer2);
+        strcat(temp, " ");
+        strcat(temp, buffer3);
+
+        (*bookData)[i] = temp;
+    }
+}
+
+void outputBooksByAuthor(char** bookData, int numBooks, const char* author) {
+    cout << "Назви книг автора " << author << ":\n";
+
+    for (int i = 0; i < numBooks; ++i) {
+        // Перевіряємо, чи міститься автор у даному записі
+        if (strstr(bookData[i], author) != nullptr) {
+            char* token = strtok(bookData[i], " ");
+            cout << "Книга " << i + 1 << ": " << token << endl;
+        }
+    }
+}
+
+void releaseMemory(char** bookData, int numBooks) {
+    for (int i = 0; i < numBooks; ++i) {
+        delete[] bookData[i];
+    }
+    delete[] bookData;
+}
+
+int main() {
+    char** bookData = nullptr;
+    int numBooks = 0;
+
+    inputBookData(&bookData, numBooks);
+
+    cout << "Введені дані про книги:" << endl;
+    for (int i = 0; i < numBooks; ++i) {
+        cout << bookData[i] << endl;
+    }
+
+    const char* authorToSearch = "Author"; // Замініть "Author" на конкретного автора, якого ви шукаєте
+    outputBooksByAuthor(bookData, numBooks, authorToSearch);
+
+    releaseMemory(bookData, numBooks);
+
+    return 0;
+}
+

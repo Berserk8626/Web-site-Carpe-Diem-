@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-700.woff2') format('woff2'),
+         url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-700.woff2') format('woff');
+    font-weight: 700;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-regular.woff2') format('woff2'),
+         url('/fonts/playfair-display-sc-v17-latin/playfair-display-sc-v17-latin-regular.woff2') format('woff');
+    font-weight: 400;
+    font-style: regular;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-500.woff2') format('woff2'),
+         url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-500.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-900.woff2') format('woff2'),
+         url('/fonts/playfair-display-v37-latin/playfair-display-v37-latin-900.woff2') format('woff');
+    font-weight: 900;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: light;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-500.woff2') format('woff2');
+    font-weight: 500;
+    font-style: regular;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: SemiBold;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: Bold;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin/montserrat-v26-latin-800.woff2') format('woff2');
+    font-weight: 800;
+    font-style: ExtraBold;
+  }
+
+
+  .container--tours{
+    padding-top: 33%;
+    display: flex; /* Гибкий контейнер для горизонтального расположения */
+    flex-direction: column;
+    align-items: center; /* Выравнивание элементов по вертикали */
+    gap: 20px; /* Интервал между картинками */
+}
+.container--tours h1{
+    padding-bottom: 0px;
+    font-family: 'Playfair Display';
+    font-size: 45px;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.tours--block {
+    display: flex; /* Горизонтальне розташування блоків новин */
+    gap: 30px; /* Відстань між блоками */
+    width: 85%;
+}
+
+.price--blocks {
+    width: 350px; 
+    height: auto;
+    position: relative; /* Для позиционирования текста внутри блока */
+    display: flex;
+    flex-direction: column; /* Для вертикального размещения картинки и текста */
+    align-items: left; /* Выравнивание по центру */
+}
+
+.price--blocks img {
+    width: 100%; /* Зображення займає всю ширину блока */
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.price--blocks--con {
+    background-color: #fff; /* Білий фон */
+    padding: 5%; /* Внутрішні відступи */
+    border-radius:  5px;
+    margin-top: 2%; /* Відступ між зображенням і текстом */
+    width: 100%; /* Ширина блоку відповідає ширині зображення */
+    box-sizing: border-box; /* Увімкнути відступи всередині ширини */
+}
+
+.price--blocks--con:hover{
+    background-color: #ebeaea;
+}
+
+.price--blocks--con h4{
+    font-family: 'Playfair Display DS';
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.price--blocks--con p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 12%;
+}
+
+.price--blocks--con h3{
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 500;
+    color: #6f0b0b;
+    cursor: pointer;
+}
+
+.price--blocks--con h3:hover{
+    color: #a10a0a;
+    transition: 500ms;
+}
+
+.price--blocks--con button{
+    float: right;
+    margin-right: 5%;
+    background: #a27749b9;
+    color: white;
+    border-radius: 10px;
+    margin-top: 0px;
+    padding: 12px 10px;
+    border: 0;
+    transition: all 500ms ease;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.price--blocks--con button:hover{
+    background: #a27749;
+}
